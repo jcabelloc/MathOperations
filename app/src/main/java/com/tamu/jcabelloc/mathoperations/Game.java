@@ -83,8 +83,6 @@ public class Game extends AppCompatActivity {
         Intent intent = getIntent();
         operator = intent.getStringExtra("operator");
         generateQuestion(operator);
-
-
     }
     public void generateQuestion(String typeOperator){
         String strOperator = "";
@@ -191,6 +189,4 @@ public class Game extends AppCompatActivity {
             }
         }
     }
-
-
 }
