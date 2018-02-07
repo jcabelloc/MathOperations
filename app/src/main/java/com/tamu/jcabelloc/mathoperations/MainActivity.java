@@ -9,9 +9,7 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     public void startGame(View view) {
-        /*Log.i("Event Launch", view.getTag().toString());
-        Log.i ("Id", String.valueOf(view.getId()));
-        Log.i ("Id", getResources().getResourceEntryName(view.getId()));*/
+
         Intent intent = new Intent(getApplicationContext(), Game.class);
         intent.putExtra("operator", view.getTag().toString());
         startActivity(intent);
